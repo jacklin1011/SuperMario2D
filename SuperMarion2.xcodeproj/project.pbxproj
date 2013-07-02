@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E7BA12311782B09B003F39CA /* Player.m in Sources */ = {isa = PBXBuildFile; fileRef = E7BA122E1782B09A003F39CA /* Player.m */; };
+		E7BA12321782B09B003F39CA /* GameLevelLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = E7BA122F1782B09A003F39CA /* GameLevelLayer.m */; };
 		E7F43D6C17816A0A00ACFC46 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7F43D6B17816A0A00ACFC46 /* QuartzCore.framework */; };
 		E7F43D6E17816A0A00ACFC46 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7F43D6D17816A0A00ACFC46 /* OpenGLES.framework */; };
 		E7F43D7017816A0A00ACFC46 /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7F43D6F17816A0A00ACFC46 /* OpenAL.framework */; };
@@ -131,11 +133,21 @@
 		E7F43EEF17816A0C00ACFC46 /* vec4.c in Sources */ = {isa = PBXBuildFile; fileRef = E7F43EEE17816A0C00ACFC46 /* vec4.c */; };
 		E7F43EF417816A0C00ACFC46 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E7F43EF317816A0C00ACFC46 /* main.m */; };
 		E7F43EF717816A0C00ACFC46 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E7F43EF617816A0C00ACFC46 /* AppDelegate.m */; };
-		E7F43EFA17816A0C00ACFC46 /* HelloWorldLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = E7F43EF917816A0C00ACFC46 /* HelloWorldLayer.m */; };
-		E7F43EFD17816A0C00ACFC46 /* IntroLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = E7F43EFC17816A0C00ACFC46 /* IntroLayer.m */; };
+		E7F43F0B17816A8C00ACFC46 /* koalio_stand-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = E7F43F0317816A8C00ACFC46 /* koalio_stand-hd.png */; };
+		E7F43F0C17816A8C00ACFC46 /* koalio_stand.png in Resources */ = {isa = PBXBuildFile; fileRef = E7F43F0417816A8C00ACFC46 /* koalio_stand.png */; };
+		E7F43F0D17816A8C00ACFC46 /* tileSet.png in Resources */ = {isa = PBXBuildFile; fileRef = E7F43F0517816A8C00ACFC46 /* tileSet.png */; };
+		E7F43F0E17816A8C00ACFC46 /* replay.png in Resources */ = {isa = PBXBuildFile; fileRef = E7F43F0617816A8C00ACFC46 /* replay.png */; };
+		E7F43F0F17816A8C00ACFC46 /* jump.wav in Resources */ = {isa = PBXBuildFile; fileRef = E7F43F0717816A8C00ACFC46 /* jump.wav */; };
+		E7F43F1017816A8C00ACFC46 /* hurt.wav in Resources */ = {isa = PBXBuildFile; fileRef = E7F43F0817816A8C00ACFC46 /* hurt.wav */; };
+		E7F43F1117816A8C00ACFC46 /* level1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E7F43F0917816A8C00ACFC46 /* level1.mp3 */; };
+		E7F43F1217816A8C00ACFC46 /* level1.tmx in Resources */ = {isa = PBXBuildFile; fileRef = E7F43F0A17816A8C00ACFC46 /* level1.tmx */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E7BA122D1782B09A003F39CA /* GameLevelLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameLevelLayer.h; sourceTree = "<group>"; };
+		E7BA122E1782B09A003F39CA /* Player.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Player.m; sourceTree = "<group>"; };
+		E7BA122F1782B09A003F39CA /* GameLevelLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameLevelLayer.m; sourceTree = "<group>"; };
+		E7BA12301782B09A003F39CA /* Player.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Player.h; sourceTree = "<group>"; };
 		E7F43D6817816A0A00ACFC46 /* SuperMarion2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SuperMarion2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7F43D6B17816A0A00ACFC46 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		E7F43D6D17816A0A00ACFC46 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
@@ -394,10 +406,14 @@
 		E7F43EF317816A0C00ACFC46 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E7F43EF517816A0C00ACFC46 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		E7F43EF617816A0C00ACFC46 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		E7F43EF817816A0C00ACFC46 /* HelloWorldLayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HelloWorldLayer.h; sourceTree = "<group>"; };
-		E7F43EF917816A0C00ACFC46 /* HelloWorldLayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HelloWorldLayer.m; sourceTree = "<group>"; };
-		E7F43EFB17816A0C00ACFC46 /* IntroLayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IntroLayer.h; sourceTree = "<group>"; };
-		E7F43EFC17816A0C00ACFC46 /* IntroLayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IntroLayer.m; sourceTree = "<group>"; };
+		E7F43F0317816A8C00ACFC46 /* koalio_stand-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "koalio_stand-hd.png"; path = "Resources/koalio_stand-hd.png"; sourceTree = "<group>"; };
+		E7F43F0417816A8C00ACFC46 /* koalio_stand.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = koalio_stand.png; path = Resources/koalio_stand.png; sourceTree = "<group>"; };
+		E7F43F0517816A8C00ACFC46 /* tileSet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = tileSet.png; path = Resources/tileSet.png; sourceTree = "<group>"; };
+		E7F43F0617816A8C00ACFC46 /* replay.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = replay.png; path = Resources/replay.png; sourceTree = "<group>"; };
+		E7F43F0717816A8C00ACFC46 /* jump.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = jump.wav; path = Resources/jump.wav; sourceTree = "<group>"; };
+		E7F43F0817816A8C00ACFC46 /* hurt.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = hurt.wav; path = Resources/hurt.wav; sourceTree = "<group>"; };
+		E7F43F0917816A8C00ACFC46 /* level1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = level1.mp3; path = Resources/level1.mp3; sourceTree = "<group>"; };
+		E7F43F0A17816A8C00ACFC46 /* level1.tmx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = level1.tmx; path = Resources/level1.tmx; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -456,12 +472,12 @@
 		E7F43D7D17816A0A00ACFC46 /* SuperMarion2 */ = {
 			isa = PBXGroup;
 			children = (
+				E7BA12301782B09A003F39CA /* Player.h */,
+				E7BA122E1782B09A003F39CA /* Player.m */,
+				E7BA122D1782B09A003F39CA /* GameLevelLayer.h */,
+				E7BA122F1782B09A003F39CA /* GameLevelLayer.m */,
 				E7F43EF517816A0C00ACFC46 /* AppDelegate.h */,
 				E7F43EF617816A0C00ACFC46 /* AppDelegate.m */,
-				E7F43EF817816A0C00ACFC46 /* HelloWorldLayer.h */,
-				E7F43EF917816A0C00ACFC46 /* HelloWorldLayer.m */,
-				E7F43EFB17816A0C00ACFC46 /* IntroLayer.h */,
-				E7F43EFC17816A0C00ACFC46 /* IntroLayer.m */,
 				E7F43D7E17816A0A00ACFC46 /* Resources */,
 				E7F43D9817816A0A00ACFC46 /* libs */,
 				E7F43EF117816A0C00ACFC46 /* Supporting Files */,
@@ -472,6 +488,14 @@
 		E7F43D7E17816A0A00ACFC46 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				E7F43F0317816A8C00ACFC46 /* koalio_stand-hd.png */,
+				E7F43F0417816A8C00ACFC46 /* koalio_stand.png */,
+				E7F43F0517816A8C00ACFC46 /* tileSet.png */,
+				E7F43F0617816A8C00ACFC46 /* replay.png */,
+				E7F43F0717816A8C00ACFC46 /* jump.wav */,
+				E7F43F0817816A8C00ACFC46 /* hurt.wav */,
+				E7F43F0917816A8C00ACFC46 /* level1.mp3 */,
+				E7F43F0A17816A8C00ACFC46 /* level1.tmx */,
 				E7F43D7F17816A0A00ACFC46 /* Default.png */,
 				E7F43D8117816A0A00ACFC46 /* Default-Landscape~ipad.png */,
 				E7F43D8317816A0A00ACFC46 /* fps_images.png */,
@@ -895,6 +919,14 @@
 				E7F43D9417816A0A00ACFC46 /* Icon@2x.png in Resources */,
 				E7F43D9717816A0A00ACFC46 /* iTunesArtwork in Resources */,
 				E7F43ED517816A0C00ACFC46 /* ChangeLog in Resources */,
+				E7F43F0B17816A8C00ACFC46 /* koalio_stand-hd.png in Resources */,
+				E7F43F0C17816A8C00ACFC46 /* koalio_stand.png in Resources */,
+				E7F43F0D17816A8C00ACFC46 /* tileSet.png in Resources */,
+				E7F43F0E17816A8C00ACFC46 /* replay.png in Resources */,
+				E7F43F0F17816A8C00ACFC46 /* jump.wav in Resources */,
+				E7F43F1017816A8C00ACFC46 /* hurt.wav in Resources */,
+				E7F43F1117816A8C00ACFC46 /* level1.mp3 in Resources */,
+				E7F43F1217816A8C00ACFC46 /* level1.tmx in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1007,8 +1039,8 @@
 				E7F43EEF17816A0C00ACFC46 /* vec4.c in Sources */,
 				E7F43EF417816A0C00ACFC46 /* main.m in Sources */,
 				E7F43EF717816A0C00ACFC46 /* AppDelegate.m in Sources */,
-				E7F43EFA17816A0C00ACFC46 /* HelloWorldLayer.m in Sources */,
-				E7F43EFD17816A0C00ACFC46 /* IntroLayer.m in Sources */,
+				E7BA12311782B09B003F39CA /* Player.m in Sources */,
+				E7BA12321782B09B003F39CA /* GameLevelLayer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1112,6 +1144,7 @@
 				E7F43F0217816A0C00ACFC46 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
